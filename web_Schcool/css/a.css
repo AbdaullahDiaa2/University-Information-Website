@@ -1,0 +1,352 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+.s_one{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../eduford_img/banner.png);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+header {
+    height: 50px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 30px 60px 0px ;
+    
+}
+.logo img{
+    width: 150px;
+    height:auto;
+}
+nav {
+    display: flex;
+    align-items: center;  
+
+  
+}
+nav a {
+    display: inline-block;
+    margin: 10px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-decoration: none;
+    height: 40px;  
+    position: relative;
+}
+li {
+    list-style: none;
+    position: relative;
+  
+}
+nav li a::after {
+    content: "";
+    border-bottom: 3px crimson solid;
+    margin: auto;
+    display: block;
+    width: 0%;
+    height: 2px;
+    transition: 0.6s ease;
+}
+nav li a:hover::after{
+    width: 100%;
+    transform: scale(1.1);
+}
+.text_s1 {
+    
+    width: 900px;
+    height: 450px;
+    margin: 90px 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text_s1 h1{
+    padding: 70px 0px 10px;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+.text_s1 p {
+    color: aliceblue;
+    margin-bottom: 50px;
+    margin-left: 45px;
+}
+.text_s1  button {
+    background-color: rgba(0, 255, 255, 0);
+    border: solid rgba(250, 250, 250, 0.63) 2px;
+
+}
+.text_s1 input {
+    width: 200px;
+    height: 50px;
+    background-color:rgba(248, 247, 253, 0);
+    font-size: 14px;
+    color:wheat;
+    position: relative;
+}
+.text_s1 button::after {
+    content: "";
+    border-bottom: 3px rgb(255, 255, 255) solid;
+    position:absolute;
+    top: 475px;;
+    left: 660px;
+    width:50PX;
+    height: 2px;
+}
+.text_s1 button::before{
+    content: "";
+    border-bottom: 3px rgba(255, 255, 255, 0.863) solid;
+    position: absolute;
+    top: 475px;;
+    left: 883px;
+    width:50PX;
+    height: 2px;
+}
+.text_s1 button:hover {
+    color: aquamarine;
+    background-color: rgb(83, 100, 100);
+}
+.text_s1 span {
+    color: brown;
+    font-size: 100px;
+}
+.s_two {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+.titel {
+    margin-bottom: 100px;
+
+}
+.titel h1 {
+    padding-top: 100px ;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+.titel p {
+    color: rgb(153, 149, 149);
+     margin-left: -20px;        
+}
+.titel p::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right ,#9A031E 33%,#FB8B24 33% ,#FB8B24 66% ,#E36414 66%,#E36414 100% );
+    display: block;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.border {
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px 0px ;
+    border: 1px solid rgba(202, 202, 202, 0.589);
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px  rgb(122, 121, 121);
+    margin-left:20px;
+   transition: 0.7s ease;
+}
+.border:hover {
+    transform: scale(1.07);
+}
+.border h1 {
+    margin: 10px;
+}
+.border p {
+    font-size: 14px;
+    color: rgb(124, 123, 123);
+}
+ .borders   {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+}
+
+.titel_1 {
+    margin-bottom: 100px;
+
+}
+.titel_1 h1 {
+    padding-top: 100px ;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+.titel_1 p {
+    color: rgb(153, 149, 149);
+     margin-left: -20px;        
+}
+.border_img {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    border: 1px solid rgba(202, 202, 202, 0.589);
+    border-radius: 10px;
+    margin-left:20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: block;
+
+
+}
+.border_img img{
+    width: 350px;
+    height: 500px;
+}
+.lyer  {
+    position:absolute;
+    top: 0px;
+    left: 0px;
+   color:#ee85228f;
+   width: 100%;
+   height: 100%;
+   background-color:transparent;
+   color: #9A031E;
+}
+.lyer:hover{
+    background-color: #e3631473;
+
+}
+.lyer p {
+    position: absolute;
+    left: 300px;
+    top: 0px ;
+    transition: 0.5s ease;
+    transform: translateX(-50%);
+    font-size: 20px;
+   font-weight: 500;
+   width: 100%;
+   height: 100%;
+   background-color: #cf8290;
+}
+.lyer p:hover {
+
+    position: absolute;
+    left: 150px;
+    bottom: 150px;
+    transform: scale(1.1);
+}
+.abd {
+    background-color: black;
+    width: 500px;
+    position: absolute;
+    top: 0;
+    right: ;
+}
+.s_theer{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-bottom: 200px; */
+}
+.sT{
+    margin: 20px 0 ;
+}
+.sT h1 {
+    padding-top: 100px ;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+.sT p {
+    color: rgb(153, 149, 149);
+     margin-left: -20px;        
+}
+.st_border {
+    position: relative;
+    width: 350px;
+    height: 400px;
+    border: 1px solid rgba(202, 202, 202, 0.589);
+    border-radius: 10px;
+    margin-left:20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    display: block;
+    border: none;
+    margin-top: 80px;
+}
+.st_border img{
+    width: 350px;
+    
+}
+.st_border h1{
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.st_border  p {
+    font-size: 14px;
+    color: rgb(124, 123, 123);
+}
+
+.b_t {
+    background-color: #fa7d002e;
+    width: 500px;
+    /* height: 100px; */
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    margin-left: 40px;
+}
+.b_t img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.b_t div {
+    margin-left:20px ;
+}
+.s_fore {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../eduford_img/banner2.jpg);
+    width: 1000px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    border-radius:10px ;
+    padding: 5px;
+}
+.text_fore {
+    padding: 30px;
+    margin-top: 100PX;
+    color: aliceblue;
+
+}
+.text_fore  button {
+    background-color: rgba(0, 255, 255, 0);
+    border: solid rgba(250, 250, 250, 0.63) 2px;
+    border: none;
+    margin-top: 10PX;
+
+}
+.text_fore  button input{
+    background-color: rgba(8, 131, 238, 0);
+    color: aliceblue;
+    padding: 10PX;
+    border-radius:20PX ;
+    border: #e6d0d4 2PX solid;
+
+}
+.SEC_FOR{
+    /* background-color: #9A031E; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    margin-top: 100px;
+}
